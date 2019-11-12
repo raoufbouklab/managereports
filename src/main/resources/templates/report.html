@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Test Report</title>
+
+    <link rel="stylesheet" th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-sm-8 col-md-8">
+                    <h1>ManageReport</h1>
+                </div>
+                <div class="col-sm-8 col-md-8">
+                    <nav class="navbar">
+                        <ul class="navbar-nav navbar-right">
+                            <li class="lang">
+                                <a href="/fr/home">Français</a>
+                            </li>
+                            <li class="login">
+                                <a href="/login">Login</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="col-md-10 col-md-offset-1">
+                <nav class="navbar">
+                    <ul class="navbar-nav navbar-default navbar-nav">
+                        <li class="home"><a aria-current="page" class="active" href="/">Home </a></li>
+                        <li class="home"><a href="/report">Report </a></li>
+                        <li class="contact"><a href="/contact">Contact </a></li>
+                        <li class="about"><a href="/about">About </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="title">
+            <div class="col-md-10 col-md-offset-1">
+                <h1>Report </h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="col-md-offset-1 col-md-10">
+                <div class="filename-template">
+                    <h3>
+                        <span th:text="'Input filename is : ' + ${fileName}"></span>
+                    </h3>
+                </div>
+
+                <div class="file-content-template">
+                    <table class="table table-striped table-bordered">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">File Contents : </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td th:text="${paragraph}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="occurrences-template">
+                    <table class="table table-striped table-bordered starter-template">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Word</th>
+                            <th scope="col">Occurrences</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="instance : ${wordOccurrencesMap}">
+                            <td th:text="${instance.key}">keyvalue</td>
+                            <td th:text="${instance.value}">num</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
