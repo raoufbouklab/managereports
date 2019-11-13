@@ -1,4 +1,6 @@
-# managereports
+# Manage Reports
+
+Generate a report using Spring Boot, Thymleaf, bootstrap
 
 # Getting Started
 
