@@ -1,6 +1,6 @@
 # Manage Reports
 
-Generate a report using Spring Boot, Thymleaf, bootstrap
+Generate a report using Spring Boot, Thymleaf, bootstrap and css
 
 # Getting Started
 
