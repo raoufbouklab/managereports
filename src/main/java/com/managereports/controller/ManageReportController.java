@@ -32,6 +32,33 @@ public class ManageReportController {
     }
 
     /**
+     *
+     * @return about.html page
+     */
+    @GetMapping("/about")
+    public String getAbout(){
+        return "about";
+    }
+
+    /**
+     *
+     * @return home.html page
+     */
+    @GetMapping("/")
+    public String getHome(){
+        return "home";
+    }
+
+    /**
+     *
+     * @return contact.html page
+     */
+    @GetMapping("/contact")
+    public String getContact(){
+        return "contact";
+    }
+
+    /**
      * Setter for the manageReportService
      *
      * @param manageReportService
