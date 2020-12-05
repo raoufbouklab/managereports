@@ -127,6 +127,25 @@ div.navigation {
     background-color: #337ab7;
 }
 
+div.footer-navigation {
+    clear: both;
+    position: relative;
+    height: 150px;
+    margin-top: -150px;
+    width: 100%;
+    background-color: #004d84;
+    color: #ffffff;
+}
+
+.footer-navigation a {
+    color: white;
+    padding: 13px 14px;
+    text-decoration: none;
+}
+.footer-navigation a:hover {
+    background-color: #337ab7;
+}
+
 div.title {
     background-image: url("../images/title3.jpg");
     color: rgba(6, 3, 4, 1);
