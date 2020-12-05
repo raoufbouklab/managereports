@@ -28,7 +28,7 @@ cd managereports
 mvn clean install
 mvn spring-boot:run
 ```
-Browse to the app at (http://localhost:8088/report)
+Browse to the app at (http://localhost:8088)
 The port can be changed in application.properties
 
 2- Using Docker
@@ -41,7 +41,7 @@ mvn clean install
 docker build -f Dockerfile -t manage-reports .
 docker run -p 8088:8088 manage-reports 
 ```
-Browse to the app at (http://{YOUR_DOCKER_HOST}:8088/report). In my case I use (http://localhost:8088/report)
+Browse to the app at (http://{YOUR_DOCKER_HOST}:8088/report). In my case I use (http://localhost:8088)
 
 
 # Test the application :
