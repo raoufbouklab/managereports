@@ -23,7 +23,7 @@ To run the Application, you need to have [JDK](http://www.oracle.com/technetwork
 1- Using Command line
 
 ```
-Download project, unzip it, go to managereports diractory and run the app
+Clone the project or download and unzip it, go to managereports diractory and run the app
 cd managereports
 mvn clean install
 mvn spring-boot:run
@@ -34,22 +34,16 @@ The port can be changed in application.properties
 2- Using Docker
 
 ```
-Download project, unzip it, go to managereports diractory and run the app
+Clone the project or download and unzip it, go to managereports diractory and run the app
 cd managereports
 docker pull openjdk:8
 mvn clean install
 docker build -f Dockerfile -t manage-reports .
 docker run -p 8088:8088 manage-reports 
 ```
-Browse to the app at (http://{YOUR_DOCKER_HOST}:8088/report). With my local docker I use (http://192.168.99.100:8088/report)
+Browse to the app at (http://{YOUR_DOCKER_HOST}:8088/report). In my case I use (http://localhost:8088/report)
 
 
 # Test the application :
 
 If You want to test the application with an other paragraph, you just need to put the paragraph you want in the file "src/main/resources/paragraph.txt" and restart the application.
-
-
-
-
-
-
